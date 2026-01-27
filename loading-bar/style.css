@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#main {
+  height: 100%;
+}
+#main .loading-container {
+  width: 40%;
+  background-color: white;
+  height: 20px;
+}
+#main .loading-container .loader {
+  width: 0%;
+  height: 20px;
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */
