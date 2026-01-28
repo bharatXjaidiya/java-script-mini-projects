@@ -13,14 +13,51 @@ body{
 
 #main{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 50%;
+        border: 1px solid lightgreen;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        p{
+            b{
+                font-size: 20px;
+                color: crimson;
+            }
+        }
+    }
     .loading-container{
-        width: 40%;
+        width: 80%;
         background-color: white;
         height: 20px;
+        display: flex;
         .loader{
             width:0%;
             height: 20px;
             background-color: green;
+            transition: width 50ms linear;
         }
+        .count{
+            color: crimson;
+            font-weight: 700;
+            width: 0%;
+        }
+    }
+
+    button{
+        border: none;
+        color: white;
+        background-color: green;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        transform: scale(0.999);
     }
 }

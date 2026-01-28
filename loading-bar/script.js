@@ -1,5 +1,6 @@
 let loader = document.querySelector(".loader");
 let btn = document.querySelector("button");
+let count = document.querySelector(".count")
 let width = 0;
 btn.addEventListener('click', (e) => {
     let r = Math.floor(Math.random() * 14) + 7;
@@ -8,10 +9,11 @@ btn.addEventListener('click', (e) => {
     width = 0;
     let w = setInterval((e) => {
         ++width;
-        console.log(width)
+        count.innerHTML = `${width}%`
         loader.style.width = width + "%";
         if (width >= 100) {
             clearInterval(w);
-        }
+            count.style.color = "green"
+        };
     }, r * 10)
 })
