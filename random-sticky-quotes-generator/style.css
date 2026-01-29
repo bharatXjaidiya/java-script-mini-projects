@@ -2,10 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 html, body {
   height: 100%;
   width: 100%;
   background-color: black;
+  overflow: hidden;
+  cursor: none;
+}
+
+img {
+  position: absolute;
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */
